@@ -76,7 +76,7 @@ header {
         justify-content: space-around;
         padding: 0;
         transition: all 400ms;
-        overflow: hidden;
+        overscroll-behavior-x: contain;
     }
     .navlink {
         text-align: center;
