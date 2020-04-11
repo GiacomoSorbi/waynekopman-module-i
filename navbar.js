@@ -89,8 +89,8 @@ function addItemToCart(title, price, imageSrc) {
 }
     let cartRowContents = `
     <div class="cart-item cart-column">
-    <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
     <span class="cart-item-title">${title}</span>
+    <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
     </div><span class="cart-price cart-column">${price}</span>
     <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1">
