@@ -15,8 +15,6 @@ burger.addEventListener('click', function() {
 });
 
 
-
-
 // checks to see if document is loaded before trying to access different elements
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
