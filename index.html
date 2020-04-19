@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" href="./navbar.css">
-  <title>CoffeeCo</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <title>Socity Coffee</title>
 </head>
 
 <body>
   <header>
     <a class="navbar-brand" href="index.html">
       <div class="logo-image">
-        <img src="images/SocietyCoffee-Logo.svg" class="img-fluid">
+        <img src="images/SocietyCoffee-Logo-Web.svg" class="img-fluid">
       </div>
     </a>
     <ul class="nav">
       <li class="navlink"><a href="index.html">Home</a></li>
       <li class="navlink"><a href="shop.html">Shop</a></li>
       <li class="navlink"><a href="subscription.html">Subscription</a></li>
-      <li class="navlink"><a href="#">About us</a></li>
+      <li class="navlink"><a href="about.html">About us</a></li>
     </ul>
     <div class="burger">
       <i class="fas fa-bars"></i>
@@ -33,18 +33,42 @@
     <div class="hero-text">
       <h1>Welcome to Society Coffee</h1>
       <p>Organic, fairtrade, single sourced coffee beans from around the world, to your door</p>
-      <button class="btn btn-primary btn-purchase">Shop Now</button>
+      <a href="shop.html"><button class="btn btn-primary btn-purchase">Shop Now</button></a>
     </div>
   </div>
 </header>
 
 <main>
+
+  <section class="container content-section">
+    <h2 class="section-header">Get Your Coffee</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Shop Beans</span>
+        <img class="shop-item-image" src="https://bit.ly/31ewziW">
+        <div class="shop-item-details">
+          
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Coffee Subscription</span>
+        <img class="shop-item-image" src="https://bit.ly/31ewziW">
+        <div class="shop-item-details">
+          
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="container content-section">
     <h2 class="section-header">Most Popular</h2>
     <div class="shop-items">
       <div class="shop-item">
-        <span class="shop-item-title">India - 200g</span>
-        <img class="shop-item-image" src="https://bit.ly/31ewziW">
+        <span class="shop-item-title"><h3>Taste of India - 200g</h3></span>
+        <img class="shop-item-image" src="images/Coffee-Bag-India.png">
         <div class="shop-item-details">
           <span class="shop-item-price">£6.95</span>
           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
@@ -77,27 +101,7 @@
     </div>
   </section>
 
-  <section class="container content-section">
-    <h2 class="section-header">Accessories</h2>
-    <div class="shop-items">
-      <div class="shop-item">
-        <span class="shop-item-title">T-Shirt</span>
-        <img class="shop-item-image" src="https://bit.ly/31ewziW">
-        <div class="shop-item-details">
-          <span class="shop-item-price">£19.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-      </div>
-      <div class="shop-item">
-        <span class="shop-item-title">Coffee Cup</span>
-        <img class="shop-item-image" src="https://bit.ly/31ewziW">
-        <div class="shop-item-details">
-          <span class="shop-item-price">£6.99</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <section class="container content-section">
     <h2 class="section-header">Your cart</h2>
     <div class="cart-row">
@@ -116,10 +120,10 @@
 </main>
 
 <footer>
-  <div class="container"></div>
+  <div class="container-footer"></div>
   <section class="ft-main">
     <div class="ft-main-item">
-      <h2 class="ft-title">Society Coffee</h2>
+      <h3 class="ft-title">Society Coffee</h3>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
@@ -128,14 +132,14 @@
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Customer Care</h2>
+      <h3 class="ft-title">Customer Care</h3>
       <ul>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">FAQ's</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Sign up to our newsletter</h2>
+      <h3 class="ft-title">Sign up to our newsletter</h3>
       <p>Get the latest news & offers from us.</p>
       <form>
         <input type="email" name="email" placeholder="Enter email address">
@@ -146,8 +150,6 @@
   
   <section class="ft-legal">
     <ul class="ft-legal-list">
-      <li><a href="#">Terms &amp; Conditions</a></li>
-      <li><a href="#">Privacy Policy</a></li>
       <li>&copy; 2020 Copyright Society Coffee.</li>
     </ul>
   </section>

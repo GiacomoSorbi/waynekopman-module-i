@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <title>Society Coffee</title>
+</head>
+
+<body>
+  <header>
+    <a class="navbar-brand" href="index.html">
+      <div class="logo-image">
+        <img src="images/SocietyCoffee-Logo-Web.svg" class="img-fluid">
+      </div>
+    </a>
+
+  </header>
+
+<main>
+  <section class="container-checkout">
+    <h2 class="section-header">Checkout</h2>
+    <form>
+      <div class="row">
+        <div class="col-50">
+          <h3>Delivery Details</h3>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Bruce Wayne">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="john@example.com">
+          <label for="adr">Address</label>
+          <input type="text" id="adr" name="address" placeholder="123 street">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="London">
+          <label for="post-code">Post code</label>
+          <input type="text" id="post-code" name="post-code" placeholder="SW1 2JE">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <h3>Card Details</h3>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="Bruce Wayne">
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+          <label for="expdate">Expiry Date</label>
+          <input type="text" id="expdate" name="expdate" placeholder="11/22">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="352">
+          <!--<label><input type="checkbox" checked="checked" name="news"> Sign up to our newsletter</label>-->
+          <input type="submit" value="Checkout" class="btn checkbox">
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container-footer"></div>
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h3 class="ft-title">Society Coffee</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h3 class="ft-title">Customer Care</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ's</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h3 class="ft-title">Sign up to our newsletter</h3>
+      <p>Get the latest news & offers from us.</p>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+  
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li>&copy; 2020 Copyright Society Coffee.</li>
+    </ul>
+  </section>
+</footer>
+</body>
+</html>
