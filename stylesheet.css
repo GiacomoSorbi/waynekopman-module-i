@@ -9,40 +9,53 @@ html, body {
 }
 
 h1 {
-font-size: 3em;
-text-align: center;
+  color: #ffffff;
+  font-size: 3em;
+  text-align: center;
 }
 
 
 h2 {
-  color: black;
+  color: #322C25;
   font-size: 2em;
   font-weight: 600;
-  color: #322C25;
   text-align: center;
 }
 
 h3 {
-  color: black;
+  color: #72401C;
   font-size: 1.25em;
   font-weight: 800;
-  color: #322C25;
-  text-align: left;
+  text-align: center;
 }
 
 
 h4 {
+  color: #322C25;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: left;
 }
 
 h5 {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #322C25;
+  text-align: center;
 }
 
 h6 {
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
+  color: #322C25;
+  text-align: center; 
 }
-
 
 p {
    font-size: ;
+   text-align: center;
 }
 
 
@@ -62,7 +75,7 @@ header {
 
 .logo-image{
   width: 160px;
-  height: 60px;
+  height: 65px;
   border-radius: 0%;
   overflow: hidden;
   margin-top: 10px;
@@ -137,10 +150,10 @@ header {
 /* || The hero image */
 .hero-image {
 /* "linear-gradient" adds a darkened background effect to the image, making the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ictcoffee.com/wp-content/uploads/2020/03/great-coffee-bean.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/great-coffee-bean-Society-Coffee.jpg");
   
 /* Sets the image height */
-  height: 70%;
+  height: 80%;
   
 /* Positions and centers the image making it scale well on all screen sizes */
   background-position: center;
@@ -163,7 +176,7 @@ header {
 /* || The hero image - Landing page */
 .hero-image-about {
   /* "linear-gradient" adds a darkened background effect to the image, making the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ictcoffee.com/wp-content/uploads/2020/03/great-coffee-bean.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/great-coffee-bean-Society-Coffee.jpg");
     
   /* Sets the image height */
     height: 40%;
@@ -223,7 +236,7 @@ input {
 }
 
 .btn-primary {
-  color: white;
+  color: black;
   background-color: #CC9B65;
   border: none;
   border-radius: .3em;
@@ -281,6 +294,7 @@ input {
   align-items: center;
   padding: 5px;
   flex-direction: column;
+  text-align: center;
 }
 
 .shop-item-price {
@@ -430,6 +444,28 @@ a{
   {
      text-decoration: none;
   }
+
+  /*about us page*/
+
+.about-us-image {
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  min-width: auto;
+
+}
+
+.about-us-info {
+  float: right;
+}
+
+.about-us-text {
+  max-width: 600px;
+  float: left;
+  text-align: left;
+  margin: 10px;
+
+}
 
 /*styling for footer*/
 ul {
