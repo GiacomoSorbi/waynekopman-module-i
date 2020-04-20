@@ -31,9 +31,9 @@ h3 {
 
 
 h4 {
-  color: #322C25;
+  color: #ffffff;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -62,7 +62,7 @@ p {
 /* || Responsive Header and Navigation */
 
 
-header {
+.top-nav {
   height: 90px;
   display: flex;
   align-items: center;
@@ -447,13 +447,21 @@ a{
 
   /*about us page*/
 
+
+.about-us-main {
+  display: flex;
+}
+
 .about-us-image {
   width: 100%;
   height: auto;
   max-width: 640px;
   min-width: auto;
+  vertical-align: middle;
 
 }
+
+
 
 .about-us-info {
   float: right;
@@ -461,7 +469,7 @@ a{
 
 .about-us-text {
   max-width: 600px;
-  float: left;
+  float: 
   text-align: left;
   margin: 10px;
 
@@ -492,8 +500,6 @@ a:hover {
 
 .ft-title {
   color: #fff;
-
-  padding-bottom: 0.625rem;
 }
 
 .container-footer {
@@ -560,17 +566,19 @@ input[type="submit"] {
 .ft-legal {
   padding: 0.9375rem 1.875rem;
   background-color: #0A0705;
-  align-content: center;
+
 }
 .ft-legal-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 .ft-legal-list li {
   margin: 0.125rem 0.625rem;
   white-space: nowrap;
+
 }
 
 
