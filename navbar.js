@@ -1,28 +1,27 @@
-// Selection of HTML objects
+// RESPONSIVE NAV -  This selects the HTML objects
 const burger = document.querySelector('.burger i');
 const nav = document.querySelector('.nav');
 
-// Defining a function
+// This definines the function
 function toggleNav() {
     burger.classList.toggle('fa-bars');
     burger.classList.toggle('fa-times');
     nav.classList.toggle('nav-active');
 }
 
-// Calling the function after click event occurs
+// This calls the function after click event 
 burger.addEventListener('click', function() {
     toggleNav();
 });
 
-
-// checks to see if document is loaded before trying to access different elements
+// SHOPPING CART - This conditional statemnt checks to see if the document is loaded before trying to access different elements
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
 
-//returns all elements with relevant class and includes event listeners
+// this function returns all elements with the relevant class names, and includes event listeners
 function ready() {
     let removeCartItemButtons = document.getElementsByClassName('btn-danger')
     console.log(removeCartItemButtons)
@@ -31,13 +30,13 @@ function ready() {
         button.addEventListener('click', removeCartItem)
     }
 
-//loop limits quantity inputs
+//This loop limits the quantity inputs
     let quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (let i = 0; i < quantityInputs.length; i++) {
         let input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
-// add to cart buttons
+// This loop is for the add to cart buttons
     let addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (let i = 0; i < addToCartButtons.length; i++) {
         let button = addToCartButtons[i]
@@ -45,7 +44,7 @@ function ready() {
     }
 }
 
-//removes cart item
+//This funtion removes cart items 
 function removeCartItem(event) {
     let buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -72,13 +71,13 @@ function addToCartClicked(event) {
     updateCartTotal()
 }
 
-//creates cart row/element for item to cart items
+//creates cart row/element for item to the cart items
 function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     let cartItems = document.getElementsByClassName('cart-items')[0]
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    //stops items in basket duplicating 
+    //stops items in basket duplicating and gives user warning dialog
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already in your cart')
@@ -118,6 +117,7 @@ function updateCartTotal() {
     total = total = Math.round(total * 100) / 100 
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
+
 
 // Get the modal
 let modal = document.getElementById("myModal");

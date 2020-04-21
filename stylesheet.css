@@ -320,9 +320,6 @@ input {
   display: inline-block;
 }
 
-
-
-
 /*styling for cart*/
 .cart-header {
   font-weight: bold;
@@ -447,33 +444,46 @@ a{
 
   /*about us page*/
 
-
 .about-us-main {
-  display: flex;
+  display: inline-block;
+  text-align: center;
 }
 
 .about-us-image {
-  width: 100%;
+  width: 50%;
+  height: auto;
+  float: left;
+
+  /*width: 100%;
   height: auto;
   max-width: 640px;
-  min-width: auto;
-  vertical-align: middle;
-
-}
-
-
-
-.about-us-info {
-  float: right;
+  min-width: auto;*/
 }
 
 .about-us-text {
-  max-width: 600px;
-  float: 
   text-align: left;
   margin: 10px;
-
+  display: block;
+  width: 45%;
+  float: left;
 }
+
+@media only screen and (max-width: 480px) {
+  .about-us-image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-us-image {
+    width: 100%;
+  }
+  .about-us-text {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
 
 /*styling for footer*/
 ul {
@@ -500,6 +510,7 @@ a:hover {
 
 .ft-title {
   color: #fff;
+  margin-bottom: 5px;
 }
 
 .container-footer {

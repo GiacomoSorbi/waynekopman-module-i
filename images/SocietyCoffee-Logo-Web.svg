@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 120 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="Artboard1" transform="matrix(1.00842,0,0,1.05714,0,0)">
-        <rect x="0" y="0" width="118.696" height="35" style="fill:none;"/>
-        <g id="SocietyCoffee-Logo" transform="matrix(1.50903,0,0,1.43948,59.8436,17.5)">
-            <g transform="matrix(1,0,0,1,-39,-11.5)">
-                <clipPath id="_clip1">
-                    <rect x="0" y="0" width="78" height="23"/>
-                </clipPath>
-                <g clip-path="url(#_clip1)">
-                    <g transform="matrix(0.24,0,0,0.24,-422.899,-603.991)">
-                        <g transform="matrix(1,0,0,1,0.383272,159.646)">
-                            <g id="Logo" transform="matrix(1,0,0,1,591.551,1454.64)">
-                                <g transform="matrix(0.971059,0,0,0.971059,1233.57,995.825)">
-                                    <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:51.49px;fill:rgb(10,7,5);">COFFEE</text>
-                                </g>
-                                <g transform="matrix(0.971059,0,0,0.971059,905.401,465.067)">
-                                    <g transform="matrix(1,0,0,1,268,503.52)">
-                                        <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;fill:rgb(10,7,5);">S</text>
-                                    </g>
-                                    <g transform="matrix(1,0,0,1,315.809,503.52)">
-                                        <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;">O</text>
-                                    </g>
-                                    <g transform="matrix(1,0,0,1,366.398,503.52)">
-                                        <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;fill:rgb(10,7,5);">CIETY</text>
+<svg width="100%" height="100%" viewBox="0 0 427 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+        <g id="Artboard1" transform="matrix(2.69596,0,0,2.82621,0,0.541266)">
+            <g>
+                <rect x="0" y="0" width="118.696" height="35" style="fill:none;"/>
+                <g transform="matrix(0.362167,0,0,0.345475,-422.797,-310.791)">
+                    <g id="SocietyCoffee-Logo">
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g id="Logo">
+                                            <g transform="matrix(0.971059,0,0,0.971059,1233.57,995.825)">
+                                                <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:51.49px;fill:rgb(10,7,5);">COFFEE</text>
+                                            </g>
+                                            <g transform="matrix(0.971059,0,0,0.971059,905.401,465.067)">
+                                                <g transform="matrix(1,0,0,1,268,503.52)">
+                                                    <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;fill:rgb(10,7,5);">S</text>
+                                                </g>
+                                                <g transform="matrix(1,0,0,1,315.809,503.52)">
+                                                    <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;">O</text>
+                                                </g>
+                                                <g transform="matrix(1,0,0,1,366.398,503.52)">
+                                                    <text x="0px" y="0px" style="font-family:'AmericanTypewriter', 'American Typewriter', serif;font-size:77.235px;fill:rgb(10,7,5);">CIETY</text>
+                                                </g>
+                                            </g>
+                                        </g>
                                     </g>
                                 </g>
                             </g>
