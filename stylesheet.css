@@ -17,8 +17,8 @@ h1 {
 
 h2 {
   color: #322C25;
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.75em;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ h6 {
 }
 
 p {
-   font-size: ;
+   font-size: 1.1em;
    text-align: center;
 }
 
@@ -139,7 +139,7 @@ p {
   }
 
   .navlink a {
-    color: #CC9B65;
+    color: white
   }
 
   .nav-active {
@@ -243,11 +243,16 @@ input {
   font-weight: bold;
   width: 140px;
   text-decoration: none;
+ 
+
 }
 
 .btn-primary:hover {
   background-color: #72401C;
   text-decoration: none;
+  color: white;
+
+ 
 }
 /*styling for modal button*/
 .infoBtn {
@@ -259,8 +264,6 @@ input {
     font-weight: bold;
     width: 140px;
     margin: 5px;
-    padding: ;
-    margin: ;
     float: right;
     text-decoration: underline;
 }
@@ -357,9 +360,7 @@ input {
 
 .cart-item-title {
   color: #322C25;
-  margin-left: em;
   font-size: 1em;
-  text-align: ;
 }
 
 .cart-item-image {
@@ -427,7 +428,6 @@ input {
 .btn-purchase {
   display: flex;
   margin: auto;
-  margin-top: ;
   font-size: 1em;
   width: 200px;
   justify-content: center;
@@ -452,7 +452,7 @@ a{
 .about-us-image {
   width: 50%;
   height: auto;
-  float: left;
+  float: right;
 
   /*width: 100%;
   height: auto;
@@ -504,7 +504,6 @@ footer a {
 
 a:hover {
   color: #CC9B65;
-  text-decoration: underline;
   transition: .10s;
 }
 
@@ -640,7 +639,6 @@ input[type="submit"] {
 padding: 5px 20px 15px 20px;
   /*border: 1px solid lightgrey;*/
   border-radius: 5px;
-  width: flex;
   margin: 20px;
   min-width: 300px;
   max-width: 680px;
@@ -676,9 +674,6 @@ label {
 .btn-checkout:hover {
   background-color: #;
 }
-
-
-
 
 /* Modal Content/Box */
 .modal-content {
