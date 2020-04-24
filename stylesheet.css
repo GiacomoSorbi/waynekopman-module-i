@@ -14,7 +14,6 @@ h1 {
   text-align: center;
 }
 
-
 h2 {
   color: #322C25;
   font-size: 1.75em;
@@ -28,7 +27,6 @@ h3 {
   font-weight: 800;
   text-align: center;
 }
-
 
 h4 {
   color: #ffffff;
@@ -57,11 +55,7 @@ p {
    font-size: 1.1em;
    text-align: center;
 }
-
-
 /* || Responsive Header and Navigation */
-
-
 .top-nav {
   height: 90px;
   display: flex;
@@ -226,7 +220,6 @@ input {
   padding: 5px 5px 5px 5px;
 }
 
-
 .btn {
   text-align: center;
   vertical-align: middle;
@@ -243,8 +236,6 @@ input {
   font-weight: bold;
   width: 140px;
   text-decoration: none;
- 
-
 }
 
 .btn-primary:hover {
@@ -316,7 +307,6 @@ input {
 
 #shop-item-image-product {
   height: 450px;
-
 }
 
 #product-page-details {
@@ -453,11 +443,6 @@ a{
   width: 50%;
   height: auto;
   float: right;
-
-  /*width: 100%;
-  height: auto;
-  max-width: 640px;
-  min-width: auto;*/
 }
 
 .about-us-text {
@@ -484,8 +469,7 @@ a{
   }
 }
 
-
-/*styling for footer*/
+/*Footer styling*/
 ul {
   list-style: none;
   padding-left: 0;
@@ -537,7 +521,6 @@ a:hover {
 .ft-main-item {
   padding: 1.25rem;
   min-width: 12.5rem;
-
 }
   
 /* Footer main | Newsletter form */
@@ -587,20 +570,7 @@ input[type="submit"] {
 }
 .ft-legal-list li {
   margin: 0.125rem 0.625rem;
-  white-space: nowrap;
-
 }
-
-
-
-
-
-
-
-/* one before the last child 
-.ft-legal-list li:nth-last-child(2) {
-  flex: 1;
-}*/
 
 /* The Modal (background) */
 .modal {
@@ -614,13 +584,11 @@ input[type="submit"] {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
 }
 
 /*checkout form stlying*/
 .row {
   display: flex;
-  /*margin: auto;*/
   width: 90%;
 }
 
@@ -635,8 +603,8 @@ input[type="submit"] {
 }
 
 .container-checkout {
-/* background-color: #f2f2f2;
-padding: 5px 20px 15px 20px;
+  /* background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
   /*border: 1px solid lightgrey;*/
   border-radius: 5px;
   margin: 20px;
@@ -657,22 +625,6 @@ input[type=text] {
 label {
   margin-bottom: 10px;
   display: block;
-}
-
-.btn-checkout {
-  background-color: #000000;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 50%;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn-checkout:hover {
-  background-color: #;
 }
 
 /* Modal Content/Box */

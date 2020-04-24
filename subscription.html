@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" href="./stylesheet.css">
-  <script async src="./navbar.js"></script>
-  <title>Socity Coffee</title>
-</head>
-<body>
-  <header>
-    <nav class="top-nav">
-    <a class="navbar-brand" href="index.html">
-      <div class="logo-image">
-        <img src="images/SocietyCoffee-Logo-Web.svg" class="img-logo" alt="SocietyCoffee-Logo">
-      </div>
-    </a>
-    <ul class="nav">
-      <li class="navlink"><a href="index.html">Home</a></li>
-      <li class="navlink"><a href="shop.html">Shop</a></li>
-      <li class="navlink"><a href="subscription.html">Subscription</a></li>
-      <li class="navlink"><a href="about.html">About us</a></li>
-    </ul>
-    <div class="burger">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-  </header>
-  <main>
-    <section class="container content-section">
-      <h2 class="section-header">Coffee Bean Subscription</h2>
-      <div class="shop-items">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script async src="./navbar.js"></script>
+    <title>Socity Coffee</title>
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-image">
+            <img src="images/SocietyCoffee-Logo-Web.svg" class="img-logo" alt="SocietyCoffee-Logo">
+          </div>
+        </a>
+        <ul class="nav">
+          <li class="navlink"><a href="index.html">Home</a></li>
+          <li class="navlink"><a href="shop.html">Shop</a></li>
+          <li class="navlink"><a href="subscription.html">Subscription</a></li>
+          <li class="navlink"><a href="about.html">About us</a></li>
+        </ul>
+        <div class="burger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container content-section">
+        <h2 class="section-header">Coffee Bean Subscription</h2>
+        <div class="shop-items">
         <div class="shop-item">
-          <span class="shop-item-title"><h3>3 Month Subscription<br>3x200g</h3></span>
+          <span class="shop-item-title">
+            <h3>3 Month Subscription<br>3x200g</h3>
+          </span>
           <img class="shop-item-image" src="images/3-months.png" alt="6-months">
           <div class="shop-item-details">
             <p><strong>Receive a Bag of Coffee,<br>every month for 3 months</strong><br>
-           </p>
-           <span class="shop-item-price">£6.95</span>
-           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </p>
+            <span class="shop-item-price">£6.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
           </div>
-        <!-- Trigger/Open The Modal
-        <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
-      </div>
+          <!-- Trigger/Open The Modal
+            <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
+        </div>
         <div class="shop-item">
-          <span class="shop-item-title"><h3>6 Month Subscription<br>6x200g</h3></span>
+          <span class="shop-item-title">
+            <h3>6 Month Subscription<br>6x200g</h3>
+          </span>
           <img class="shop-item-image" src="images/6-months.png" alt="6-months">
           <div class="shop-item-details">
             <p><strong>Receive a Bag of Coffee,<br>every month for 6 months</strong><br>
-           </p>
-           <span class="shop-item-price">£6.95</span>
-           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </p>
+            <span class="shop-item-price">£6.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
           </div>
-        <!-- Trigger/Open The Modal
-        <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
-      </div>
-      <div class="shop-item">
-        <span class="shop-item-title"><h3>12 Month Subscription<br>12x200g</h3></span>
-        <img class="shop-item-image" src="images/12-months.png" alt="12-months">
-        <div class="shop-item-details">
-          <p><strong>Receive a Bag of Coffee,<br>every month for 12 months</strong><br>
-          </p>
-          <span class="shop-item-price">£6.95</span>
-          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          <!-- Trigger/Open The Modal
+            <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
         </div>
-        <!-- Trigger/Open The Modal 
-        <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
-      </div>
-      
-    </section>
-
-  <section class="container content-section">
-    <h2 class="section-header">Your cart</h2>
-    <div class="cart-row">
-      <span class="cart-item cart-header cart-column">ITEM</span>
-      <span class="cart-price cart-header cart-column">PRICE</span>
-      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-  </div>
-    <div class="cart-items">
-    </div>
-    <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">£0.00</span>
-    </div>
-    <button class="btn btn-primary btn-purchase" type="button">Check out</button>
-  </section>
-</main>
-
-<footer>
-  <div class="container-footer"></div>
-  <section class="ft-main">
-    <div class="ft-main-item">
-      <h4 class="ft-title">Society Coffee</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Subscription</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </div>
-    <div class="ft-main-item">
-      <h4 class="ft-title">Customer Care</h4>
-      <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">FAQ's</a></li>
-      </ul>
-    </div>
-    <div class="ft-main-item">
-      <h4 class="ft-title">Sign up to our newsletter <br>to receive the latest news & offers</h4>
-      <form>
-        <input type="email" name="email" placeholder="Enter email address">
-        <input type="submit" value="Subscribe">
-      </form>
-    </div>
-  </section>
-  
-  <section class="ft-legal">
-    <ul class="ft-legal-list">
-      <li>&copy; 2020 Copyright Society Coffee.</li>
-    </ul>
-  </section>
-</footer>
-</body>
+        <div class="shop-item">
+          <span class="shop-item-title">
+            <h3>12 Month Subscription<br>12x200g</h3>
+          </span>
+          <img class="shop-item-image" src="images/12-months.png" alt="12-months">
+          <div class="shop-item-details">
+            <p><strong>Receive a Bag of Coffee,<br>every month for 12 months</strong><br>
+            </p>
+            <span class="shop-item-price">£6.95</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+          <!-- Trigger/Open The Modal 
+            <button class="infoBtn" id="infoBtn" data-modal="myModal">More info</button>-->
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Your cart</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">£0.00</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">Check out</button>
+      </section>
+    </main>
+    <footer>
+      <div class="container-footer"></div>
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h4 class="ft-title">Society Coffee</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Subscription</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h4 class="ft-title">Customer Care</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h4 class="ft-title">Sign up to our newsletter <br>to receive the latest news & offers</h4>
+          <form>
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </section>
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li>&copy; 2020 Copyright Society Coffee.</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
