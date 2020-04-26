@@ -1,35 +1,31 @@
-// RESPONSIVE NAV -  This selects the HTML objects
-const burger = document.querySelector('.burger i');
+// Burger Nav - Const variables select HTML objects
 const nav = document.querySelector('.nav');
-
+const burger = document.querySelector('.burger i');
 // This definines the function
 function toggleNav() {
-    burger.classList.toggle('fa-bars');
-    burger.classList.toggle('fa-times');
-    nav.classList.toggle('nav-active');
+  burger.classList.toggle('fa-bars');
+  nav.classList.toggle('nav-active');
+  burger.classList.toggle('fa-times');
 }
-
-// This calls the function after click event 
+// Event listerner calls the function after click event 
 burger.addEventListener('click', function() {
     toggleNav();
 });
 
-// SHOPPING CART - This conditional statemnt checks to see if the document is loaded before trying to access different elements
+// Shopping cart - This conditional statemnt checks to see if the document is loaded before trying to access different elements
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
-
 // this function returns all elements with the relevant class names, and includes event listeners
 function ready() {
-    let removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    let removeCartItemButtons = document.getElementsByClassName('btn-remove')
     console.log(removeCartItemButtons)
     for (let i = 0; i < removeCartItemButtons.length; i++) {
         let button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
-
 //This loop limits the quantity inputs
     let quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (let i = 0; i < quantityInputs.length; i++) {
@@ -43,14 +39,12 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 }
-
 //This funtion removes cart items 
 function removeCartItem(event) {
     let buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
-
 // function for quantity input, checks (value) to see if it's a number or not
 function quantityChanged(event) {
     let input = event.target
@@ -59,7 +53,6 @@ function quantityChanged(event) {
     }
     updateCartTotal()
  }
-
 // adds item, images and price to cart by class name
 function addToCartClicked(event) {
     let button = event.target
@@ -70,7 +63,6 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
-
 //creates cart row/element for item to the cart items
 function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
@@ -91,15 +83,14 @@ function addItemToCart(title, price, imageSrc) {
     </div><span class="cart-price cart-column">${price}</span>
     <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1">
-    <button class="btn btn-danger" type="button">X</button>
+    <button class="btn btn-remove" type="button">X</button>
     </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     //removes cart items after they've been added
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
-
 function updateCartTotal() {
     let cartItemContainer = document.getElementsByClassName('cart-items')[0]
     let cartRows = cartItemContainer.getElementsByClassName('cart-row')
@@ -117,27 +108,4 @@ function updateCartTotal() {
     total = total = Math.round(total * 100) / 100 
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
-
-
-// Get the modal
-let modal = document.getElementById("myModal");
-// Get the button that opens the modal
-let btn = document.getElementById("infoBtn");
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-	modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-	modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
-    }
-}
-
 

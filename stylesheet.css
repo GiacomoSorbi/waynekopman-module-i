@@ -55,7 +55,7 @@ p {
    font-size: 1.1em;
    text-align: center;
 }
-/* || Responsive Header and Navigation */
+/* Responsive Header and Navigation */
 .top-nav {
   height: 90px;
   display: flex;
@@ -70,7 +70,6 @@ p {
 .logo-image{
   width: 160px;
   height: 65px;
-  border-radius: 0%;
   overflow: hidden;
   margin-top: 10px;
   float: left;
@@ -97,7 +96,6 @@ p {
 .navlink a:hover {
   color: #72401C;
   text-decoration: underline;
-  transform: scalex(0);
   transition: .10s;
   font-size: 1.1em;
   transition: 0.3s ease all;
@@ -140,25 +138,21 @@ p {
     right: 0;
   }
 }
-
-/* || The hero image */
+/* Hero image - Homepage */
 .hero-image {
 /* "linear-gradient" adds a darkened background effect to the image, making the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/great-coffee-bean-Society-Coffee.jpg");
-  
 /* Sets the image height */
   height: 80%;
-  
 /* Positions and centers the image making it scale well on all screen sizes */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-  
 /* Places the text in the center of the image */
 .hero-text {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -166,23 +160,19 @@ p {
   width: 80%;
   text-align: center;
 }
-
-/* || The hero image - Landing page */
+/* Hero image - About Us */
 .hero-image-about {
   /* "linear-gradient" adds a darkened background effect to the image, making the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/great-coffee-bean-Society-Coffee.jpg");
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/About-Us-Hero.jpg");
   /* Sets the image height */
     height: 40%;
-    
   /* Positions and centers the image making it scale well on all screen sizes */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
-    
-  /* Places the text in the center of the image */
+  /*Text center of the image */
   .hero-text {
     position: absolute;
     top: 50%;
@@ -192,18 +182,15 @@ p {
     width: 80%;
     text-align: center;
   }
-
-/* || Product results */
+/* || Products */
 .content-section {
-  margin: 1em;
+  margin: 16px;
 }
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 0 24px;
 }
-
 .section-header {
   border-bottom: 1px solid #322c25;
   padding-bottom: 16px;
@@ -223,7 +210,7 @@ input {
 .btn {
   text-align: center;
   vertical-align: middle;
-  padding: .67em .67em;
+  padding: 10px 10px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -232,37 +219,20 @@ input {
   color: black;
   background-color: #CC9B65;
   border: none;
-  border-radius: .3em;
+  border-radius: 5px;
   font-weight: bold;
   width: 140px;
   text-decoration: none;
 }
-
 .btn-primary:hover {
   background-color: #72401C;
   text-decoration: none;
   color: white;
-
- 
-}
-/*styling for modal button*/
-.infoBtn {
-    display: block;
-    color: black;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    width: 140px;
-    margin: 5px;
-    float: right;
-    text-decoration: underline;
 }
 
 .shop-all-coffee {
   display: block
 }
-
 
 /*styling for shop items*/
 .shop-item {
@@ -359,15 +329,15 @@ input {
   border-radius: 10px;
 }
 
-.btn-danger {
+.btn-remove {
   color: white;
   background-color: #0A0705;
   border: none;
-  border-radius: .3em;
+  border-radius: 5px;
   font-weight: bold;
 }
 
-.btn-danger:hover {
+.btn-remove:hover {
   background-color: #CC4C4C;
 }
 
@@ -431,9 +401,7 @@ a{
   {
      text-decoration: none;
   }
-
-  /*about us page*/
-
+/*about us page*/
 .about-us-main {
   display: inline-block;
   text-align: center;
@@ -458,6 +426,7 @@ a{
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .about-us-image {
     width: 100%;
@@ -499,30 +468,30 @@ a:hover {
 .container-footer {
   flex: 1;
 }
-
 /* Footer main */
 .ft-main {
-  padding: 1.25rem 1.875rem;
+  padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
 @media only screen and (min-width: 480px) {
   .ft-main {
     justify-content: space-between;
   }
 }
+
 @media only screen and (min-width: 1240px) {
   .ft-main {
     justify-content: space-evenly;
   }
 }
 
-.ft-main-item {
-  padding: 1.25rem;
-  min-width: 12.5rem;
+.ft-item {
+  padding: 20px;
+  min-width: 200px;
 }
-  
 /* Footer main | Newsletter form */
 form {
   display: flex;
@@ -530,131 +499,32 @@ form {
 }
 
 input[type="email"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
+  padding: 10px;
+  margin-top: 5px;
   margin-right: 5px;
-  /*margin-bottom: 0.3125rem;*/
   height: auto;
   border-radius: 5px;
   display: block;
-  font-size: 1em;
   width: 220px;
 }
 
 input[type="submit"] {
-  border: 0;
   border-radius: 5px; 
   display: block;
   background-color: #8a5d3c;
   color: #fff;
   cursor: pointer;
   height: auto;
-  /*margin: 10px;*/
-  font-size: 1em;
   width: 100px;
   }
-
-/* Footer legal */
-.ft-legal {
-  padding: 0.9375rem 1.875rem;
+/*Footer bottom*/
+.ft-copyright {
+  padding: 15px 30px;
   background-color: #0A0705;
-
 }
-.ft-legal-list {
+.ft-copyright-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-}
-.ft-legal-list li {
-  margin: 0.125rem 0.625rem;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/*checkout form stlying*/
-.row {
-  display: flex;
-  width: 90%;
-}
-
-/*.form {
-  display: flex;
-  flex-wrap: wrap;
-}
-*/
-.col-50 {
-  flex: 50%;
-  padding: 0 15px;
-}
-
-.container-checkout {
-  /* background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  /*border: 1px solid lightgrey;*/
-  border-radius: 5px;
-  margin: 20px;
-  min-width: 300px;
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
-  max-width: 800px;
-}
-
-.modal-content-modal-text {
-  text-align: left;
-  width: 100%;
-  flex-wrap: wrap;
-  float: right;
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
