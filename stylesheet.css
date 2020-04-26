@@ -182,7 +182,8 @@ p {
     width: 80%;
     text-align: center;
   }
-/* || Products */
+
+/* || Product results */
 .content-section {
   margin: 16px;
 }
@@ -437,7 +438,6 @@ a{
     margin-left: 0px;
   }
 }
-
 /*Footer styling*/
 ul {
   list-style: none;
@@ -468,6 +468,7 @@ a:hover {
 .container-footer {
   flex: 1;
 }
+
 /* Footer main */
 .ft-main {
   padding: 20px 30px;
@@ -475,13 +476,11 @@ a:hover {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-
 @media only screen and (min-width: 480px) {
   .ft-main {
     justify-content: space-between;
   }
 }
-
 @media only screen and (min-width: 1240px) {
   .ft-main {
     justify-content: space-evenly;
@@ -492,6 +491,7 @@ a:hover {
   padding: 20px;
   min-width: 200px;
 }
+  
 /* Footer main | Newsletter form */
 form {
   display: flex;
@@ -527,4 +527,37 @@ input[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/*checkout form stlying*/
+.row {
+  display: flex;
+  width: 90%;
+}
+
+.col-50 {
+  flex: 50%;
+  padding: 0 15px;
+}
+
+.container-checkout {
+  border-radius: 5px;
+  margin: 20px;
+  min-width: 300px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
 }
