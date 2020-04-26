@@ -172,7 +172,7 @@ p {
     background-size: cover;
     position: relative;
   }
-  /*Text center of the image */
+  /* Text center of the image */
   .hero-text {
     position: absolute;
     top: 50%;
@@ -182,8 +182,7 @@ p {
     width: 80%;
     text-align: center;
   }
-
-/* || Product results */
+/* Product results */
 .content-section {
   margin: 16px;
 }
@@ -234,7 +233,6 @@ input {
 .shop-all-coffee {
   display: block
 }
-
 /*styling for shop items*/
 .shop-item {
   margin: 30px;
@@ -283,7 +281,6 @@ input {
 #product-page-details {
   display: inline-block;
 }
-
 /*styling for cart*/
 .cart-header {
   font-weight: bold;
@@ -528,8 +525,7 @@ input[type="submit"] {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/*checkout form stlying*/
+/*Checkout form styling*/
 .row {
   display: flex;
   width: 90%;
