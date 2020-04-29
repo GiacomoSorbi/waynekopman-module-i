@@ -91,9 +91,10 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
+//Goes through every row in cart, finds the price and multiplies by the quantity, then displays in cart total
 function updateCartTotal() {
-    let cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    let cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    let cartItemContainer = document.getElementsByClassName('cart-items')[0]//selects very first elemnt inside of the array
+    let cartRows = cartItemContainer.getElementsByClassName('cart-row')//gets all elements with cart-row class
     let total = 0
     for (let i = 0; i < cartRows.length; i++) {
         let cartRow = cartRows[i]
