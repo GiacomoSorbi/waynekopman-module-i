@@ -1,59 +1,50 @@
-// Selection of HTML objects
-const burger = document.querySelector('.burger i');
+// Burger Nav - Const variables select HTML objects
 const nav = document.querySelector('.nav');
-
-// Defining a function
+const burger = document.querySelector('.burger i');
+// This definines the function
 function toggleNav() {
-    burger.classList.toggle('fa-bars');
-    burger.classList.toggle('fa-times');
-    nav.classList.toggle('nav-active');
+  burger.classList.toggle('fa-bars');
+  nav.classList.toggle('nav-active');
+  burger.classList.toggle('fa-times');
 }
-
-// Calling the function after click event occurs
+// Event listerner calls the function after click event 
 burger.addEventListener('click', function() {
     toggleNav();
 });
 
-
-
-
-// checks to see if document is loaded before trying to access different elements
+// Shopping cart - This conditional statemnt checks to see if the document is loaded before trying to access different elements
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
-
-//returns all elements with relevant class and includes event listeners
+// this function returns all elements with the relevant class names, and includes event listeners
 function ready() {
-    let removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    let removeCartItemButtons = document.getElementsByClassName('btn-remove')
     console.log(removeCartItemButtons)
     for (let i = 0; i < removeCartItemButtons.length; i++) {
         let button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
-
-//loop limits quantity inputs
+//This loop limits the quantity inputs
     let quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (let i = 0; i < quantityInputs.length; i++) {
         let input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
-// add to cart buttons
+// This loop is for the add to cart buttons
     let addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (let i = 0; i < addToCartButtons.length; i++) {
         let button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
 }
-
-//removes cart item
+//This funtion removes cart items 
 function removeCartItem(event) {
     let buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
-
 // function for quantity input, checks (value) to see if it's a number or not
 function quantityChanged(event) {
     let input = event.target
@@ -62,7 +53,6 @@ function quantityChanged(event) {
     }
     updateCartTotal()
  }
-
 // adds item, images and price to cart by class name
 function addToCartClicked(event) {
     let button = event.target
@@ -73,14 +63,13 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
-
-//creates cart row/element for item to cart items
+//creates cart row/element for item to the cart items
 function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     let cartItems = document.getElementsByClassName('cart-items')[0]
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    //stops items in basket duplicating 
+    //stops items in basket duplicating and gives user warning dialog
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already in your cart')
@@ -89,23 +78,23 @@ function addItemToCart(title, price, imageSrc) {
 }
     let cartRowContents = `
     <div class="cart-item cart-column">
-    <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
     <span class="cart-item-title">${title}</span>
+    <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
     </div><span class="cart-price cart-column">${price}</span>
     <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1">
-    <button class="btn btn-danger" type="button">REMOVE</button>
+    <button class="btn btn-remove" type="button">X</button>
     </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     //removes cart items after they've been added
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
-
+//Goes through every row in cart, finds the price and multiplies by the quantity, then displays in cart total
 function updateCartTotal() {
-    let cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    let cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    let cartItemContainer = document.getElementsByClassName('cart-items')[0]//selects very first elemnt inside of the array
+    let cartRows = cartItemContainer.getElementsByClassName('cart-row')//gets all elements with cart-row class
     let total = 0
     for (let i = 0; i < cartRows.length; i++) {
         let cartRow = cartRows[i]
@@ -120,3 +109,4 @@ function updateCartTotal() {
     total = total = Math.round(total * 100) / 100 
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
+

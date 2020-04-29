@@ -1,53 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TheCoffeeBeanCo</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width"> 
-        <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-        <script src="shoppingcart.js" async></script>
-    </head>
-   
-    <header class="main-header">
-        <nav class="main-nav nav">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script async src="./script.js"></script>
+  <title>Socity Coffee</title>
+</head>
 
-            <h2 class="shop-name shop-name-large">TheCoffeeBeanCo</h2>
+<body>
+<header>
+  <nav class="top-nav">
+    <a class="navbar-brand" href="index.html">
+      <div class="logo-image">
+      <img src="images/SocietyCoffee-Logo-Web.svg" class="img-logo" alt="SocietyCoffee-Logo">
+      </div>
+    </a>
+    <ul class="nav">
+      <li class="navlink"><a href="index.html">Home</a></li>
+      <li class="navlink"><a href="shop.html">Shop</a></li>
+      <li class="navlink"><a href="subscription.html">Subscription</a></li>
+      <li class="navlink"><a href="about.html">About us</a></li>
+    </ul>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+</header>
 
-            <ul>
-                <li><a href="shoppingcart.html">HOME</a></li>
-                <li><a href="shoppingcart.html">STORE</a></li>
-                <li><a href="index.html">SUBSCRIPTION</a></li>
-                <li><a href="about.html">OUR COFFEE</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="hero-image-about">
+  <div class="hero-text"><h1>About Us</h1></div>
+</div>
 
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>About our Coffee</h1>
-          <p>Lorem ipsum</p>
-          <button class="btn btn-primary btn-purchase">Shop Now</button>
+<main>
+  <div>
+    <section class="container content-section">
+      <h2 class="section-header">Our Story</h2>
+        <div class="about-us-page">
+          <div class="about-us-main">
+          <img class="about-us-image" src="images/Shop-All-Coffee.png" alt="about-us">
+          <p class="about-us-text">We're on a mission to provide coffee drinkers with the best, expertly grown coffee beans from around the world while spreading education too.
+          With over 50+ countries producing coffee, we travel the world exploring the best the world has to offer.<br><br>This is Coffee you can't find on the shelves of your local store.
+          We designed subscription packages to send you on a flavor discovery. Buy a bag of your choice once off, or choose a subscription where you will receive a surprise monthly blend .
+          Start your world tour of today
+          </p>
+          <a href="shop.html"><button class="btn btn-primary btn-purchase">Shop Now</button></a>
         </div>
       </div>
-    
-    <main>
-    <body>
-        
-    </body>>
+    </section>
+</div>
+</main>
 
-
-        </main>
-
-        <footer class="main-footer">
-            <div class="container main-footer-container">
-                <h3 class="band-name"></h3>
-                <ul class="nav footer-nav">
-                    <li>
-                        <a href="" target="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+<footer>
+    <div class="container-footer"></div>
+    <section class="ft-main">
+      <div class="ft-item">
+        <h4 class="ft-title">Society Coffee</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="ft-item">
+        <h4 class="ft-title">Customer Care</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ's</a></li>
+        </ul>
+      </div>
+      <div class="ft-item">
+        <h4 class="ft-title">Sign up to our newsletter <br>to receive the latest news & offers.</h4>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+  
+    <section class="ft-copyright">
+      <ul class="ft-copyright-list">
+        <li>&copy; 2020 Copyright Society Coffee.</li>
+    </ul>
+  </section>
+</footer>
+</body>
 </html>

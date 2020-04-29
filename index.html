@@ -1,107 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Milestone 1</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script async src="./script.js"></script>
+  <title>Socity Coffee</title>
+</head>
 
+<body>
+<header>
+    <nav class="top-nav">
+    <a class="navbar-brand" href="index.html">
+      
+      <div class="logo-image">
+        <img src="images/SocietyCoffee-Logo-Web.svg" class="img-logo" alt="SocietyCoffee-Logo">
+      </div>
+    </a>
+    
+    <ul class="nav">
+      <li class="navlink"><a href="index.html">Home</a></li>
+      <li class="navlink"><a href="shop.html">Shop</a></li>
+      <li class="navlink"><a href="subscription.html">Subscription</a></li>
+      <li class="navlink"><a href="about.html">About us</a></li>
+    </ul>
 
-</header>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+</header> 
 
-<div class="hero-image">
-  <header class="">
-    <nav class="">
-        <ul>
-            <li><a href="shoppingcart.html">STORE</a></li>
-            <li><a href="index.html">SUBSCRIPTION</a></li>
-            <li><a href="about.html">OUR COFFEE</a></li>
-        </ul>
-    </nav>
-    <h1 class="shop-name shop-name-large">TheCoffeeBeanCo</h1>
-  <div class="hero-text">
-    <h1>About our Coffee</h1>
-    <p>Lorem ipsum</p>
-    <button class="btn btn-primary btn-purchase">Shop Now</button>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to Society Coffee</h1>
+      <p>Organic, fairtrade, single sourced coffee beans from around the world, to your door</p>
+      <a href="shop.html"><button class="btn btn-primary btn-purchase">Shop Now</button></a>
+    </div>
   </div>
-</div>
 
 <main>
-  <body>
+  <div>
+    <section class="container content-section">
+      <h2 class="section-header">Flavour of the Month</h2>
+      <div class="about-us-page">
+        <div class="about-us-main">           
+          <img class="about-us-image" src="images/Coffee-Bag-Flavour-month.png" alt="flavour-month">
+          <h3>Taste of India</h3>
+          <p class="about-us-text">India has a long history of coffee culture. It was initally brough
+            to India around the 1600s. Coffee growing for export was not started around 1840 by the British. 
+            India has become the fifth largest producer of coffee in the world. 
+            The flavors of this fine coffee from India includes notes of cardamom, ceder and nutmeg. 
+            Why not treat yourself to this world class blend</p>        
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <section class="container content-section">
+    <h2 class="section-header">Popular Beans</h2>
+    <p>Not sure where to start? Here are some of our most popular choices</p>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title"><h3>Taste of India - 200g</h3></span>
+        <img class="shop-item-image" src="images/Coffee-Bag-India.png" alt="Coffee-India">
+        <div class="shop-item-details">
+          <p><strong>Flavour:</strong><br>
+            • Cardamom
+            • Cedar
+            • Nutmeg<br>
+            <strong>Roast:</strong> Medium</p>
+          <span class="shop-item-price">£6.95</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
 
+      <div class="shop-item">
+        <span class="shop-item-title"><h3>Taste of Peru - 200g</h3></span>
+        <img class="shop-item-image" src="images/Coffee-Bag-Peru.png" alt="Coffee-Peru">
+        <div class="shop-item-details">
+          <p><strong>Flavour</strong><br>
+            • Dry
+            • Full bodied
+            • Smokey<br>
+            <strong>Roast:</strong> Strong</p>
+          <span class="shop-item-price">£7.95</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>     
+      </div>
 
-    <section class=formbody>
+      <div class="shop-item">
+        <span class="shop-item-title"><h3>Taste of Kenya - 200g</h3></span>
+        <img class="shop-item-image" src="images/Coffee-Bag-Kenya.png" alt="Coffee-Kenya">
+        <div class="shop-item-details">
+          <p><strong>Flavour</strong><br>
+            • Cherry
+            • Acidic
+            • Earthy<br>
+            <strong>Roast:</strong> Medium</p>
+          <span class="shop-item-price">£6.95</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>      
+      </div>
 
-      <form action="input" method="POST">
-      <h1>Create Your Coffee Bean Plan</h1>
-        <section class="name">
-          <label for="name">Name*</label>
-          <input type="text" name="name" id="name">
-        </section><br>
-        
-        <section class="email">
-          <label for="email">Email address*</label>
-          <input type="email" name="email" id="email">
-        </section><br>
-        
-        <section class="password">
-          <label for="Email">Password*</label>
-          <input type="password" name="password" id="password">
-        </section><br>
-        
-        <section class="bean-type">
-        <label for="bean-type">How do you like your coffee beans?</label><br>
-          
-        <select name="beans" id="beans">
-        <option value="grindmyself">I'll grind them myself</option>
-        <option value="coarse">Coarse (French press)</option>
-        <option value="medium-fine">Medium-fine (filter)</option>
-        <option value="fine">Fine (Espresso)</option><br>  
-        </select>
-        </section><br>
-        
-        <section class="subscription">
-          <div class="subscription-title">How often would you like Coffee Beans sent?</div>
-          <div>
-          <input type="radio" name="subscription" id="weekly" value="weekly">
-          <label for="weekly">Weekly - £49.95 per month</label>
-          </div>
-          <div>
-          <input type="radio" name="subscription" id="monthly" value="monthly">
-          <label for="monthly">Monthly - £12.99 per month</label>
-          </div>
-        </section><br>
-        
-        <section class="checkbox">
-          <input type="checkbox" id="newsletter" name="newsletter" value="#">
-          <label for="newsletter">Tick box to sign up to our Newsletter</label>
-          </section><br>
-        
-        <section>
-          <button class="btn btn-primary btn-purchase" input id="submitBtn" type="submit">Submit
-          </button>
-        </section>
-                
-        <section>
+      <div class="shop-item">
+        <span class="shop-item-title"><h3>Taste of Ethiopia - 200g</h3></span>
+        <img class="shop-item-image" src="images/Coffee-Bag-ethiopia.png" alt="Coffee-Ethiopia">
+        <div class="shop-item-details">
+          <p><strong>Flavour:</strong><br>
+            • Chocolate
+            • Cedar
+            • Cherry<br>
+            <strong>Roast:</strong> Medium</p>
+          <span class="shop-item-price">£8.95</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+  </section>
 
-        </section>
-      </form>     
-    </section> 
-  </body>
-  </main>   
-  <footer class="main-footer">
-    <div class="container main-footer-container">
-        <h3 class="band-name"></h3>
-        <ul class="nav footer-nav">
-            <li>
-                <a href="" target="">
-                </a>
-            </li>
-        </ul>
+    <section class="container content-section">
+    <h2 class="section-header">Quick Basket</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
     </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">£0.00</span>
+    </div>
+    <a href="checkout.html"><button class="btn btn-primary btn-purchase" type="button">Check out</button></a>
+  </section>
+</main>
+
+<footer>
+  <div class="container-footer"></div>
+  <section class="ft-main">
+    <div class="ft-item">
+      <h4 class="ft-title">Society Coffee</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="ft-item">
+      <h4 class="ft-title">Customer Care</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ's</a></li>
+      </ul>
+    </div>
+    <div class="ft-item">
+      <h4 class="ft-title">Sign up to our newsletter <br>to receive the latest news & offers.</h4>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+
+  <section class="ft-copyright">
+    <ul class="ft-copyright-list">
+      <li>&copy; 2020 Copyright Society Coffee.</li>
+    </ul>
+  </section>
 </footer>
- 
-  </body>
+</body>
 </html>
